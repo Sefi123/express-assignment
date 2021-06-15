@@ -1,0 +1,25 @@
+extends ../layout
+block content
+    h1=title 
+    table.table
+        thead 
+            tr
+                th ID 
+                th Name 
+                th Gender
+                th Email 
+                th Course_Code 
+                th Address 
+                th Phone 
+            tbody 
+                each detail in details
+                    tr
+                        td=detail._id 
+                        td=detail.name  
+                        td=detail.Gender  
+                        td=detail.Email 
+                        td=detail.CourseCode  
+                        td=detail.address.street_address 
+                        td=detail.Phone[0]
+                        
+                        
