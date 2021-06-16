@@ -1,10 +1,13 @@
 extends ../layout
 block content
-    h1=title 
+    .row 
+        .col-sm-8 
+            h1=title
+        .col-sm-4 
+            a(href="faculty/") 
     table.table
         thead 
             tr
-                th ID 
                 th Name 
                 th Gender
                 th Email 
@@ -14,7 +17,6 @@ block content
             tbody 
                 each detail in details
                     tr
-                        td=detail._id 
                         td=detail.name  
                         td=detail.Gender  
                         td=detail.Email 

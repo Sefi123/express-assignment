@@ -41,7 +41,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-const uri = 'mongodb+srv://sefi123:sefi12345@sefi1.rud7y.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const uri = "mongodb+srv://sefi123:sefi12345@sefi1.rud7y.mongodb.net/Faculty?retryWrites=true&w=majority";
 
 
 mongoose.connect(uri, {useNewUrlParser : true , useUnifiedTopology: true}).then(() => console.log("Connected!!!!!")).catch((error) => console.log(error.message));
