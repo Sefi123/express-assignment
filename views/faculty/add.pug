@@ -1,0 +1,24 @@
+extends ../layout
+block content
+    h1 Add New Details 
+    form(action="faculty/add" , method="post")
+        .form-group
+            label(for="name") Name 
+            input#name(type="text" , class="form-control" , name="name")
+        .form-group
+            label(for="gender") Gender 
+            input#gender(type="text" , class="form-control" , name="gender")
+        .form-group
+            label(for="email") Email 
+            input#email(type="text" , class="form-control" , name="email")
+        .form-group
+            label(for="coursecode") Course Code 
+            input#coursecode(type="text" , class="form-control" , name="course")
+        .form-group
+            label(for="address")  Address
+            input#address(type="text" , class="form-control" , name="address")
+        .form-group
+            label(for="phone")  Phone
+            input#phone(type="text" , class="form-control" , name="phone")
+        input(type="submit" , class="btn btn-info")
+    
